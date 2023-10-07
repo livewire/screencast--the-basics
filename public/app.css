@@ -29,5 +29,23 @@ body {
     & div {
         padding: 1rem;
         padding-left: 8rem;
+
+        & table {
+            width: 100%;
+            border-collapse: collapse;
+
+            & th {
+                background-color: #f0f0f0;  /* Slightly gray background */
+                font-weight: bold;          /* Make the text bold */
+                text-align: left;           /* Left-align the text */
+                padding: 10px;              /* Add some padding */
+                border-bottom: 2px solid #ccc; /* Add a border at the bottom */
+            }
+
+            & td {
+                padding: 10px;              /* Add some padding */
+                border-bottom: 1px solid #ccc; /* Add a border at the bottom */
+            }
+        }
     }
 }
