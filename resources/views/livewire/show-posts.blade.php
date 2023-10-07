@@ -6,13 +6,25 @@
             <tr>
                 <th>Title</th>
                 <th>Content</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Post title</td>
-                <td>Post content...</td>
-            </tr>
+            @foreach ($posts as $post)
+                <tr wire:key="{{ $post->id }}">
+                    <td>{{ $post->title }}</td>
+                    <td>{{ str($post->content)->words(8) }}</td>
+                    <td>
+                        <button
+                            type="button"
+                            wire:click="delete({{ $post->id }})"
+                            wire:confirm="Are you sure you want to delete this Post?"
+                        >
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+            @endforeach
         </tbody>
     </table>
 </div>
