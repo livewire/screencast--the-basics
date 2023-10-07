@@ -1,6 +1,6 @@
 <div>
     <form wire:submit="add">
-        <input type="text" wire:model="todo">
+        <input type="text" wire:model.change="todo">
 
         <button type="submit">Add</button>
     </form>
