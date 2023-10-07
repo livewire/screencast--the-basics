@@ -6,6 +6,6 @@
     <title>Livewire Basics</title>
 </head>
 <body>
-    <livewire:counter />
+    <livewire:todos />
 </body>
 </html>
