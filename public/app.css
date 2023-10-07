@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: start;
+    margin: 0;
+
+    & nav {
+        position: fixed;
+        width: 5rem;
+        display: flex;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        border-right: 1px solid black;
+        height: 100vh;
+
+        & a {
+            margin-bottom: .5rem;
+
+            &:visited {
+                color: inherit;
+            }
+
+            &.current {
+                font-weight: 600;
+            }
+        }
+    }
+
+    & div {
+        padding: 1rem;
+        padding-left: 8rem;
+    }
+}
