@@ -9,8 +9,8 @@
     </head>
     <body>
         <nav>
-            <a href="/posts" @class(['current' => request()->is('posts')])>Posts</a>
-            <a href="/posts/create" @class(['current' => request()->is('posts/create')])>Create Post</a>
+            <a wire:navigate href="/posts" @class(['current' => request()->is('posts')])>Posts</a>
+            <a wire:navigate href="/posts/create" @class(['current' => request()->is('posts/create')])>Create Post</a>
         </nav>
 
         {{ $slot }}
