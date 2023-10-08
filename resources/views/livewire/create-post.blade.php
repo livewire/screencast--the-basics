@@ -1,15 +1,17 @@
 <div>
     <h2>New Post:</h2>
 
-    <form>
+    <form wire:submit="save">
         <label>
             <span>Title</span>
-            <input type="text">
+            <input type="text" wire:model="title">
+            @error('title') <em>{{ $message }}</em>@enderror
         </label>
 
         <label>
             <span>Content</span>
-            <textarea></textarea>
+            <textarea wire:model="content"></textarea>
+            @error('content') <em>{{ $message }}</em>@enderror
         </label>
 
         <button type="submit">Save</button>
