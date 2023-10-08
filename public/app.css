@@ -57,6 +57,14 @@ body {
                 & em {
                    font-size: .8rem;
                 }
+
+                & small {
+                    text-align: right;
+                    font-size: .65rem !important;
+                    color: #0009;
+                    align-self: flex-end;
+                    font-size: .8rem;
+                }
             }
         }
     }
