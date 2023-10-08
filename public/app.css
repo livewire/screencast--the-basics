@@ -47,5 +47,17 @@ body {
                 border-bottom: 1px solid #ccc; /* Add a border at the bottom */
             }
         }
+
+        & form {
+            & label {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1rem;
+
+                & em {
+                   font-size: .8rem;
+                }
+            }
+        }
     }
 }

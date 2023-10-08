@@ -17,4 +17,6 @@ class Post extends Model
         ['id' => 4, 'title' => 'Moonlit Musings', 'content' => 'Last night, I found myself gazing at the moon, lost in its silvery glow. It cast shadows that danced gracefully, weaving tales of ancient mystique. In that moment, I felt a deep connection to the universe, a sense of belonging that words can scarcely describe.'],
         ['id' => 5, 'title' => 'Rediscovering Art', 'content' => 'Art has a profound way of touching the soul. Today, I revisited some of my favorite pieces, each telling a story of different epochs, cultures, and emotions. In the brush strokes and chiseled marble, I found echoes of humanity’s timeless quest for expression and connection.'],
     ];
+
+    protected $guarded = [];
 }
