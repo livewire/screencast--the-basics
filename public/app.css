@@ -34,6 +34,10 @@ body {
             width: 100%;
             border-collapse: collapse;
 
+            & .archived {
+                background: #ddd;
+            }
+
             & th {
                 background-color: #f0f0f0;  /* Slightly gray background */
                 font-weight: bold;          /* Make the text bold */
